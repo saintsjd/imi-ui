@@ -1,0 +1,562 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+  <div id="filter-bar">
+    <div class="row">
+      <div class="col-sm-1">
+        <div id="filter-bar-label">
+          <span class="glyphicon glyphicon-cog"></span>
+          Report Settings
+        </div>
+      </div>
+      <div class="col-sm-4" style="padding:0;">
+        <a href="#" class="filter-btn" id="product-filter-btn">
+          <h4>Products</h4>
+          <p>Abrasives, Brushes, Chemicals</p>
+        </a>
+      </div>
+      <div class="col-sm-4" style="padding:0;">
+        <a href="#" class="filter-btn" id="territory-filter-btn">
+          <h4>Territory</h4>
+          <p>35 Counties, AZ, CO, UT</p>
+        </a>
+      </div>
+      <div class="col-sm-3" style="padding:0 15px 0 0;">
+        <a href="#" class="filter-btn" id="optional-filter-btn">
+          <h4>Optional Filters</h4>
+          <p>All Company Sizes<br>SIC 2000-2599, 2800-3299, 3333</p>
+        </a>
+      </div>
+    </div>
+
+    <div id="filters">
+
+      <div id="product-filter" class="filter">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Choose Products:</h4>
+            <form role="form">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail1">Search</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a Product...">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword1">Products</label>
+                <textarea class="form-control" rows="10">Product selection tree</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+              <a href="#">Discard Changes</a>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <h4>Included in the report:</h4>
+            <h4><span class="label label-primary">Abrasives x</span> </h4>
+            <h4><span class="label label-primary">Chemicals x</span> </h4>
+            <h4><span class="label label-primary">Brushes x</span></h4>
+          </div>
+        </div>
+      </div>
+      <div id="territory-filter" class="filter">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Choose Territory:</h4>
+            <form role="form">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail1">Search</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a county, state, or province...">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword1">Territory</label>
+                <textarea class="form-control" rows="10">Territory selection tree</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+              <a href="#">Discard Changes</a>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <h4>Included in the report:</h4>
+            <h4><span class="label label-primary">US - Arizona - Pima x</span></h4>
+            <h4><span class="label label-primary">US - Arizona - Maricopa x</span></h4> 
+            <h4><span class="label label-primary">US - Colorado - Boulder x</span></h4> 
+            <h4><span class="label label-primary">US - Colorado - Denver x</span></h4> 
+          </div>
+        </div>
+      </div>
+      <div id="optional-filter" class="filter">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Choose Customer Segments:</h4>
+            <form role="form">
+              <div class="form-group">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option1"> SIC
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2"> NAICS
+                  </label>
+                </div>  
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail1">Search</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a SIC or NAICS...">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword1">Code</label>
+                <textarea class="form-control" rows="10">SIC or NAICS selection tree</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+              <a href="#">Discard Changes</a>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <h4>Included in the report:</h4>
+            <h4><span class="label label-primary">1200-1399 x</span></h4>
+            <h4><span class="label label-primary">1500 x</span></h4> 
+            <h4><span class="label label-primary">2000-3999 x</span></h4> 
+            <h4><span class="label label-primary">4500-5000 x</span></h4> 
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Choose Company Sizes:</h4>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                1-9 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                10-19 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                20-49 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                50-99 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                100-499 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                500-999 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                1000+ Employees
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h4>Included in the report:</h4>
+            <p>All company sizes</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <h1>Northeast Region Safety, Chemicals</h1>
+<ul class="nav nav-pills">
+        <li class="active"><a href="#">Regular link</a></li>
+        <li class="dropdown">
+          <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+          <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
+          <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+          <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+<ul class="nav nav-pills" style="border-bottom: 1px solid whitesmoke;">
+  <li><span style="position: relative;display: block;padding: 10px 5px 10px 0;">Report Sections:</span></li>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#territory">Territory</a></li>
+  <li><a href="#segment">Customer Segment</a></li>
+  <li><a href="#prospects">Prospects</a></li>
+<li class="dropdown">
+          <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+          <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+          </ul>
+        </li>
+          <li class="pull-right dropdown">
+      <a id="dLabel" role="button" data-toggle="dropdown" href="#" class="btn btn-default">
+        Export <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <li><a href="#">All Data</a></li>
+        <li><a href="#">Territory Data</a></li>
+        <li><a href="#">Customer Segment Data</a></li>
+        <li><a href="#">Prospects Data</a></li>
+      </ul>
+  </li>
+</ul>
+
+  <div class="row">
+    <div class="col-md-7">
+      <h2 id="overview">Report Overview</h2>
+
+      <h3>$234M annual demand at 44,000 locations</h3>
+      <br>
+      <p><strong>Included in this report</strong>
+        <br>Products: xxx, xxx, xxx, xxx
+        <br>Territory: xxx, xxx, xxx, xxx, 
+        <br>Customer Segments: xxx, xxx, xxx
+        <br>Company Sizes: All Sizes
+      </p>
+
+    </div>
+    <div class="col-md-5">
+      <br>
+      <iframe width='100%' height='250' frameBorder='0' src='http://a.tiles.mapbox.com/v3/saintsjd.map-mu9v3m5h.html?26#9/39.79798577319723/-104.94277954101561'></iframe>
+    </div>
+  </div>        
+
+<hr>
+
+
+<h2 id="territory">Demand by Territory</h2>
+<br>
+<div class="btn-toolbar">
+  <p class="toolbar-text"><strong>Group Data by:</strong></p>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default">
+      <input type="radio" name="options" id="option1"> Nation
+    </label>
+    <label class="btn btn-default">
+      <input type="radio" name="options" id="option2"> Region <small>(USA Only)</small>
+    </label>
+    <label class="btn btn-default">
+      <input type="radio" name="options" id="option3"> State
+    </label>
+    <label class="btn btn-default">
+      <input type="radio" name="options" id="option3"> MSA <small>(USA Only)</small>
+    </label>
+    <label class="btn btn-default">
+      <input type="radio" name="options" id="option3" checked> County <small>(USA Only)</small>
+    </label>
+  </div>
+</div>
+<br>
+
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Territory</th>
+        <th>Demand</th>
+        <th># Locations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>US - Colorado - Boulder</td>
+        <td>$234,000</td>
+        <td>657</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+
+<hr>
+
+<h2 id="segment">Demand by Customer Segment</h2>
+<br>
+<div class="btn-toolbar">
+  <p class="toolbar-text"><strong>Group Data by:</strong></p>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default">
+      <input type="radio" name="options" id="option1"> SIC
+    </label>
+    <label class="btn btn-default">
+      <input type="radio" name="options" id="option2"> NAICS
+    </label>
+  </div>
+</div>
+<br>
+
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>SIC Code</th>
+        <th>Demand</th>
+        <th># Locations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4321 Cheese Manufacturing</td>
+        <td>$234,000</td>
+        <td>657</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>$3,000</td>
+        <td>23</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+
+<hr>
+
+<h2 id="prospects">Prospects</h2>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Segment</th>
+        <th>County</th>
+        <th>State/Province</th>
+        <th>Demand</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Boulder Rock Gym</td>
+        <td>329200 - Rock Climbing Facilities</td>
+        <td>Boulder</td>
+        <td>CO</td>
+        <td>$55,678</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+      <tr>
+        <td>Other Location</td>
+        <td>SIC or Naics depending on selection above</td>
+        <td>county</td>
+        <td>state</td>
+        <td>$3,456</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>

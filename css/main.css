@@ -1,0 +1,111 @@
+body {
+  color: #555;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+a { color: #1087bf;}
+.navbar {
+  margin: 0;
+  background-color: #1087bf;
+  border: none;
+  border-radius: 0;
+}
+.label-primary {
+background-color: #1087bf;
+}
+.btn-primary {
+color: white;
+background-color: #1087bf;
+border: none;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  }
+.navbar-default .navbar-nav > li > a {
+  color: #c1e7fa;
+}
+
+#support-bar {
+    background-color: #424242;
+    color: #e9e9e9;
+}
+#support-bar h4 {
+   color: #e9e9e9;
+}
+#support-bar button.close {
+   color: #e9e9e9;
+   opacity: 1.0;
+}
+
+#filter-bar {
+min-height: 20px;
+padding: 0;
+margin-top: 20px;
+margin-bottom: 20px;
+background-color: whitesmoke;
+border: 1px solid #e3e3e3;
+border-radius: 4px;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#filter-bar-label {
+  font-size: 0.9em; 
+  font-weight:bold;
+  padding: 15px 19px 19px 19px;
+  color: #666;
+}
+
+#filter-bar-label .glyphicon {
+  font-size:36px;
+}
+
+.filter-btn {
+  display: block;
+  height: 114px;
+  padding: 15px;
+  border-left: 2px solid #eee;
+  color: #666;
+}
+
+.filter-btn:hover {
+  text-decoration: none;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: #e3e3e3;
+}
+.filter-btn h4 {
+  font-weight: bold;
+  margin-top: 0;
+  color: #666;
+}
+.filter-btn p {
+  color: #999;
+}
+
+.filter {
+  display :none;
+  background-color: #e3e3e3;
+  padding: 9px 19px 19px;
+  color: #666;
+}
+
+.toolbar-text {
+float: left;
+margin: 6px 10px 0 0;
+}
+
+.pagination {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #3c4e5a;
+  color: #eee;
+  padding: 30px;
+}
