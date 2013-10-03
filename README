@@ -1,0 +1,8 @@
+# Install
+
+gem install jekyll
+git clone <repo>
+cd imi-ui
+jekyll serve 
+
+Browse to http://0.0.0.0:4000
