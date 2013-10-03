@@ -184,30 +184,37 @@ title: Your New Jekyll Site
 </div>
 
 
+<div class="row">
+  <div class="col-md-9">
+    <h1>Southeast Region Potential Branch Locations</h1>
+  </div>
+  <div class="col-md-3">
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-default dropdown-toggle export-btn" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-save"></span> 
+      Export <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <li><a href="#">All Reports</a></li>
+        <li><a href="#">Territory Report</a></li>
+        <li><a href="#">Customer Segment Report</a></li>
+        <li><a href="#">Prospect Report</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<h1>Northeast Region Safety, Chemicals</h1>
-
-<ul class="nav nav-pills" style="border-bottom: 1px solid whitesmoke;">
+<!--
+<ul class="nav nav-pills" id="report-sections-nav">
   <li><span style="position: relative;display: block;padding: 10px 5px 10px 0;">Report Sections:</span></li>
   <li><a href="#overview">Overview</a></li>
   <li><a href="#territory">Territory</a></li>
   <li><a href="#segment">Customer Segment</a></li>
   <li><a href="#prospects">Prospects</a></li>
-  <li class="pull-right dropdown">
-    <a id="dLabel" role="button" data-toggle="dropdown" href="#" class="btn btn-default">
-      <span class="glyphicon glyphicon-save"></span>
-       Export <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-      <li><a href="#">All Reports</a></li>
-      <li><a href="#">Territory Report</a></li>
-      <li><a href="#">Customer Segment Report</a></li>
-      <li><a href="#">Prospect Report</a></li>
-    </ul>
-  </li>
 </ul>
+-->
 
-<div class="row">
+<div class="row" style="background-color:#fff;">
   <div class="col-md-7">
     <h2 id="overview">Report Overview</h2>
 
@@ -235,7 +242,7 @@ title: Your New Jekyll Site
   </div>
   <div class="col-md-3">
     <div class="btn-group pull-right">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      <button type="button" class="btn btn-default dropdown-toggle export-btn" data-toggle="dropdown">
         <span class="glyphicon glyphicon-save"></span> 
       Export <span class="caret"></span>
       </button>
@@ -355,7 +362,7 @@ title: Your New Jekyll Site
   </div>
   <div class="col-md-3">
     <div class="btn-group pull-right">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      <button type="button" class="btn btn-default dropdown-toggle export-btn" data-toggle="dropdown">
         <span class="glyphicon glyphicon-save"></span> 
       Export <span class="caret"></span>
       </button>
@@ -389,6 +396,7 @@ title: Your New Jekyll Site
     <thead>
       <tr>
         <th>SIC Code</th>
+        <th>Category</th>
         <th>Demand</th>
         <th># Locations</th>
       </tr>
@@ -396,51 +404,61 @@ title: Your New Jekyll Site
     <tbody>
       <tr>
         <td>4321 Cheese Manufacturing</td>
+        <td>Manufacturing</td>
         <td>$234,000</td>
         <td>657</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
       <tr>
         <td>Other Location</td>
+        <td>Category</td>
         <td>$3,000</td>
         <td>23</td>
       </tr>
@@ -467,7 +485,7 @@ title: Your New Jekyll Site
   </div>
   <div class="col-md-3">
     <div class="btn-group pull-right">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      <button type="button" class="btn btn-default dropdown-toggle export-btn" data-toggle="dropdown">
         <span class="glyphicon glyphicon-save"></span> 
       Export <span class="caret"></span>
       </button>
