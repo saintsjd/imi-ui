@@ -17,7 +17,7 @@ a { color: #1087bf;}
   border-radius: 0;
 }
 
-.modal-dialog { width: 95% }
+#myModal .modal-dialog, #myModal2 .modal-dialog { width: 95%; max-width: 930px; }
 
 .label-primary {
 background-color: #1087bf;
