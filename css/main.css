@@ -187,3 +187,31 @@ border: 1px solid #e3e3e3;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+a.thumbnail:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+a.my-report {
+  color:  #62717a;
+}
+
+.my-report {
+  height: 200px;
+  overflow: hidden;
+}
+
+.new-my-report {
+  background-color: #eee;
+}
+.my-report h5 {
+  font-weight: bold;
+}
+.my-report p {
+  font-size: 0.9em;
+}
+
+.thumbnail .caption {
+  color:  #62717a;
+}

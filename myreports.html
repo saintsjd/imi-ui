@@ -14,7 +14,7 @@ title: Your New Jekyll Site
 	</p>
 
 	<h3>then...</h3>
-	<a href="#" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-plus"></span> Create your first report</a>
+	<a href="new.html" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-plus"></span> Create your first report</a>
 
 	<br>
 	<br>
@@ -29,7 +29,117 @@ title: Your New Jekyll Site
 <div class="section">
 	<p>(If the user has reports...)</p>
 	<h1>My Reports</h1>
+	<br>
+	<div class="row">
+		<div class="col-md-3">
+			<a data-toggle="modal" href="#newReportModal" class="btn btn-block btn-lg btn-primary"><span class="glyphicon glyphicon-plus"></span> New Report</a>
+		</div>
+		<div class="col-md-9">
+			<div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+      			<input type="text" class="form-control input-lg" placeholder="Search for a report...">
+    		</div><!-- /input-group -->
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-md-3">
+			<a href="report.html" class="thumbnail my-report">
+				<div class="caption">
+				<h5>North Dakota Expansion</h5>
+				<p>Products: xxx, xxx, xxx, xxx
+				<br>Territory: xxx, xxx, xxx, xxx</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="report.html" class="thumbnail my-report">
+				<div class="caption">
+				<h5>Prospects near Chicago</h5>
+				<p>Products: xxx, xxx, xxx, xxx
+				<br>Territory: xxx, xxx, xxx, xxx</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="report.html" class="thumbnail my-report">
+				<div class="caption">
+				<h5>Branch Locations</h5>
+				<p>Products: xxx, xxx, xxx, xxx
+				<br>Territory: xxx, xxx, xxx, xxx</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="report.html" class="thumbnail my-report">
+				<div class="caption">
+				<h5>North Dakota Expansion</h5>
+				<p>Products: xxx, xxx, xxx, xxx
+				<br>Territory: xxx, xxx, xxx, xxx</p>
+				</div>
+			</a>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-3">
+			<a href="report.html" class="thumbnail my-report">
+				<div class="caption">
+				<h5>Other Report</h5>
+				<p>Products: xxx, xxx, xxx, xxx
+				<br>Territory: xxx, xxx, xxx, xxx</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="report.html" class="thumbnail my-report">
+				<div class="caption">
+				<h5>Other Report</h5>
+				<p>Products: xxx, xxx, xxx, xxx
+				<br>Territory: xxx, xxx, xxx, xxx</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="report.html" class="thumbnail my-report">
+				<div class="caption">
+				<h5>Other Report</h5>
+				<p>Products: xxx, xxx, xxx, xxx
+				<br>Territory: xxx, xxx, xxx, xxx</p>
+				</div>
+			</a>
+		</div>
+	</div>
+
 
 </div>
 
 </div>
+
+
+<div class="modal fade" id="newReportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Create New Report</h4>
+        </div>
+        <div class="modal-body">
+
+<form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name Your New Report</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Example: Abrasives Profile for Northeast Region...">
+  </div>
+</form>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <a href="new.html" class="btn btn-primary">Create Report</a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
