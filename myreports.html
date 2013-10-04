@@ -4,8 +4,13 @@ title: Your New Jekyll Site
 ---
 <br>
 <div class="container">
+
+<div class="alert alert-danger">
+  <strong>Heads up!</strong> The box below appears when theh user first logs in and has no reports
+</div>
+
 <div class="section text-center">
-	<p>(If the user has <strong>NO</strong> reports...)</p>
+	
 	<h1>Welcome! Let's get started...</h1>
 
 	<h3>Watch a short video tutorial</h3>
@@ -14,7 +19,7 @@ title: Your New Jekyll Site
 	</p>
 
 	<h3>then...</h3>
-	<a href="new.html" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-plus"></span> Create your first report</a>
+	<a data-toggle="modal" href="#newReportModal" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-plus"></span> Create your first report</a>
 
 	<br>
 	<br>
@@ -26,8 +31,11 @@ title: Your New Jekyll Site
 </div>
 
 
+<div class="alert alert-danger">
+  <strong>Heads up!</strong> The box below appears when the user has logged in before and created some reports
+</div>
+
 <div class="section">
-	<p>(If the user has reports...)</p>
 	<h1>My Reports</h1>
 	<br>
 	<div class="row">
