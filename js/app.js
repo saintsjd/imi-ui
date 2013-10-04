@@ -31,5 +31,11 @@ $(function(){
     });
 
 
+    $(".form-signin").submit(function(){
+        window.location = "myreports.html";
+        return false;
+    });
+
+
     return '\'Allo \'Allo!';
 });
