@@ -3,208 +3,35 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="filter-bar">
-  <div class="row">
-    <div class="col-sm-1">
-      <div id="filter-bar-label">
-        <span class="glyphicon glyphicon-cog"></span>
-        Report Settings
-      </div>
-    </div>
-    <div class="col-sm-4" style="padding:0;">
-      <a href="#" class="filter-btn" id="product-filter-btn">
-        <h4>Products</h4>
-        <p>Abrasives, Brushes, Chemicals</p>
-      </a>
-    </div>
-    <div class="col-sm-4" style="padding:0;">
-      <a href="#" class="filter-btn" id="territory-filter-btn">
-        <h4>Territory</h4>
-        <p>35 Counties, AZ, CO, UT</p>
-      </a>
-    </div>
-    <div class="col-sm-3" style="padding:0 15px 0 0;">
-      <a href="#" class="filter-btn" id="optional-filter-btn">
-        <h4>Optional Filters</h4>
-        <p>All Company Sizes<br>SIC 2000-2599, 2800-3299, 3333</p>
-      </a>
-    </div>
-  </div>
-
-  <div id="filters">
-
-    <div id="product-filter" class="filter">
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Choose Products:</h4>
-          <form role="form">
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail1">Search</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a Product...">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputPassword1">Products</label>
-              <textarea class="form-control" rows="10">Product selection tree</textarea>
-            </div>
-            <button type="submit" class="btn btn-primary update-btn">Update Report</button>
-            <a href="#">Discard Changes</a>
-          </form>
-        </div>
-        <div class="col-sm-6">
-          <h4>Included in the report:</h4>
-          <h4><span class="label label-primary">Abrasives x</span> </h4>
-          <h4><span class="label label-primary">Chemicals x</span> </h4>
-          <h4><span class="label label-primary">Brushes x</span></h4>
-        </div>
-      </div>
-    </div>
-    <div id="territory-filter" class="filter">
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Choose Territory:</h4>
-          <form role="form">
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail1">Search</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a county, state, or province...">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputPassword1">Territory</label>
-              <textarea class="form-control" rows="10">Territory selection tree</textarea>
-            </div>
-            <button type="submit" class="btn btn-primary update-btn">Update Report</button>
-            <a href="#">Discard Changes</a>
-          </form>
-        </div>
-        <div class="col-sm-6">
-          <h4>Included in the report:</h4>
-          <h4><span class="label label-primary">US - Arizona - Pima x</span></h4>
-          <h4><span class="label label-primary">US - Arizona - Maricopa x</span></h4> 
-          <h4><span class="label label-primary">US - Colorado - Boulder x</span></h4> 
-          <h4><span class="label label-primary">US - Colorado - Denver x</span></h4> 
-        </div>
-      </div>
-    </div>
-    <div id="optional-filter" class="filter">
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Choose Customer Segments:</h4>
-          <form role="form">
-            <div class="form-group">
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option1"> SIC
-                </label>
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option2"> NAICS
-                </label>
-              </div>  
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail1">Search</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a SIC or NAICS...">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputPassword1">Code</label>
-              <textarea class="form-control" rows="10">SIC or NAICS selection tree</textarea>
-            </div>
-          </form>
-        </div>
-        <div class="col-sm-6">
-          <h4>Included in the report:</h4>
-          <h4><span class="label label-primary">1200-1399 x</span></h4>
-          <h4><span class="label label-primary">1500 x</span></h4> 
-          <h4><span class="label label-primary">2000-3999 x</span></h4> 
-          <h4><span class="label label-primary">4500-5000 x</span></h4> 
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Choose Company Sizes:</h4>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              1-9 Employees
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              10-19 Employees
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              20-49 Employees
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              50-99 Employees
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              100-499 Employees
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              500-999 Employees
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              1000+ Employees
-            </label>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <h4>Included in the report:</h4>
-          <p>All company sizes</p>
-        </div>
-
-      </div>
-      <hr>
-      <button type="submit" class="btn btn-primary update-btn">Update Report</button>
-      <a href="#">Discard Changes</a>
-
-    </div>
-
-
-
-
-  </div>
-
-</div>
-
+{% include filters.html %}
 
 <div class="row">
-  <div class="col-md-9">
-    <h1>Southeast Region Potential Branch Locations</h1>
+  <div class="col-xs-10">
+<h1>Southeast Region Potential Branch Locations</h1>
   </div>
-  <div class="col-md-3">
-    <div class="btn-group pull-right">
-      <button type="button" class="btn btn-default dropdown-toggle export-btn" data-toggle="dropdown">
-        <span class="glyphicon glyphicon-save"></span> 
-      Export <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <li><a href="#">All Reports</a></li>
-        <li><a href="#">Territory Report</a></li>
-        <li><a href="#">Customer Segment Report</a></li>
-        <li><a href="#">Prospect Report</a></li>
-      </ul>
-    </div>
+  <div class="col-xs-2">
+
+<!-- Single button -->
+<div class="btn-group pull-right">
+  <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" style="margin-top:15px;">
+    <span class="glyphicon glyphicon-download"></span> Download <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">All Data</a></li>
+    <li><a href="#">Territory Data</a></li>
+    <li><a href="#">Customer Segment Data</a></li>
+    <li><a href="#">Prospect Data</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Print</a></li>
+    <li><a href="#">Share</a></li>
+  </ul>
+</div>
+
+
   </div>
 </div>
 
-<!--
+
 <ul class="nav nav-pills" id="report-sections-nav">
   <li><span style="position: relative;display: block;padding: 10px 5px 10px 0;">Report Sections:</span></li>
   <li><a href="#overview">Overview</a></li>
@@ -212,11 +39,11 @@ title: Your New Jekyll Site
   <li><a href="#segment">Customer Segment</a></li>
   <li><a href="#prospects">Prospects</a></li>
 </ul>
--->
 
-<div class="row" style="background-color:#fff;">
-  <div class="col-md-7">
-    <h2 id="overview">Report Overview</h2>
+<div id="overview" class="section even">
+<div class="row">
+  <div class="col-sm-6 col-md-7">
+    <h2>Overview</h2>
 
     <h3>$234M annual demand at 44,000 locations</h3>
     <br>
@@ -228,34 +55,17 @@ title: Your New Jekyll Site
     </p>
 
   </div>
-  <div class="col-md-5">
+  <div class="col-sm-6 col-md-5">
     <br>
     <iframe width='100%' height='250' frameBorder='0' src='http://a.tiles.mapbox.com/v3/saintsjd.map-mu9v3m5h.html?26#9/39.79798577319723/-104.94277954101561'></iframe>
+
   </div>
 </div>        
+</div><!-- #overview -->
 
-<hr>
+<div id="territory" class="section">
 
-<div class="row">
-  <div class="col-md-9">
-    <h2 id="territory">Demand by Territory</h2>
-  </div>
-  <div class="col-md-3">
-    <div class="btn-group pull-right">
-      <button type="button" class="btn btn-default dropdown-toggle export-btn" data-toggle="dropdown">
-        <span class="glyphicon glyphicon-save"></span> 
-      Export <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <li><a href="#">All Reports</a></li>
-        <li><a href="#">Territory Report</a></li>
-        <li><a href="#">Customer Segment Report</a></li>
-        <li><a href="#">Prospect Report</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
+<h2>Demand by Territory</h2>
 <br>
 <div class="btn-toolbar">
   <p class="toolbar-text"><strong>Group Data by:</strong></p>
@@ -354,28 +164,11 @@ title: Your New Jekyll Site
   <li><a href="#">&raquo;</a></li>
 </ul>
 
-<hr>
+</div> <!-- #territory -->
 
-<div class="row">
-  <div class="col-md-9">
-    <h2 id="segment">Demand by Customer Segment</h2>
-  </div>
-  <div class="col-md-3">
-    <div class="btn-group pull-right">
-      <button type="button" class="btn btn-default dropdown-toggle export-btn" data-toggle="dropdown">
-        <span class="glyphicon glyphicon-save"></span> 
-      Export <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <li><a href="#">All Reports</a></li>
-        <li><a href="#">Territory Report</a></li>
-        <li><a href="#">Customer Segment Report</a></li>
-        <li><a href="#">Prospect Report</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+<div id="segment" class="section even">
 
+<h2>Demand by Customer Segment</h2>
 <br>
 <div class="btn-toolbar">
   <p class="toolbar-text"><strong>Group Data by:</strong></p>
@@ -476,30 +269,12 @@ title: Your New Jekyll Site
   <li><a href="#">&raquo;</a></li>
 </ul>
 
-<hr>
+</div> <!-- #segment -->
 
+<div id="prospects" class="section">
 
-<div class="row">
-  <div class="col-md-9">
-    <h2 id="prospects">Prospects</h2>
-  </div>
-  <div class="col-md-3">
-    <div class="btn-group pull-right">
-      <button type="button" class="btn btn-default dropdown-toggle export-btn" data-toggle="dropdown">
-        <span class="glyphicon glyphicon-save"></span> 
-      Export <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <li><a href="#">All Reports</a></li>
-        <li><a href="#">Territory Report</a></li>
-        <li><a href="#">Customer Segment Report</a></li>
-        <li><a href="#">Prospect Report</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
+<h2>Prospects</h2>
+<br>
 <div class="table-responsive">
   <table class="table table-hover">
     <thead>
@@ -595,3 +370,5 @@ title: Your New Jekyll Site
   <li><a href="#">5</a></li>
   <li><a href="#">&raquo;</a></li>
 </ul>
+
+</div><!-- #prospects -->

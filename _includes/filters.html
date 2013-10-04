@@ -1,0 +1,179 @@
+<div id="filter-bar">
+  <div class="row">
+    <div class="col-xs-1">
+      <div id="filter-bar-label">
+        <span class="glyphicon glyphicon-cog"></span>
+        <span>Report Settings</span>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <a href="#" class="filter-btn" id="product-filter-btn">
+        <h4>Products</h4>
+        <p class="hidden-xs">Abrasives, Brushes, Chemicals</p>
+      </a>
+    </div>
+    <div class="col-xs-4">
+      <a href="#" class="filter-btn" id="territory-filter-btn">
+        <h4>Territory</h4>
+        <p class="hidden-xs">35 Counties, AZ, CO, UT</p>
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="#" class="filter-btn" id="optional-filter-btn">
+        <h4>Optional Filters</h4>
+        <p class="hidden-xs">All Company Sizes<br>SIC 2000-2599, 2800-3299, 3333</p>
+      </a>
+    </div>
+  </div>
+
+  <div id="filters">
+
+    <div id="product-filter" class="filter">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Choose Products:</h4>
+          <form role="form">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail1">Search</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a Product...">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputPassword1">Products</label>
+              <textarea class="form-control" rows="10">Product selection tree</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+            <a href="#">Discard Changes</a>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <h4>Included in the report:</h4>
+          <h4><span class="label label-primary">Abrasives x</span> </h4>
+          <h4><span class="label label-primary">Chemicals x</span> </h4>
+          <h4><span class="label label-primary">Brushes x</span></h4>
+        </div>
+      </div>
+    </div>
+    <div id="territory-filter" class="filter">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Choose Territory:</h4>
+          <form role="form">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail1">Search</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a county, state, or province...">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputPassword1">Territory</label>
+              <textarea class="form-control" rows="10">Territory selection tree</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+            <a href="#">Discard Changes</a>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <h4>Included in the report:</h4>
+          <h4><span class="label label-primary">US - Arizona - Pima x</span></h4>
+          <h4><span class="label label-primary">US - Arizona - Maricopa x</span></h4> 
+          <h4><span class="label label-primary">US - Colorado - Boulder x</span></h4> 
+          <h4><span class="label label-primary">US - Colorado - Denver x</span></h4> 
+        </div>
+      </div>
+    </div>
+    <div id="optional-filter" class="filter">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Choose Customer Segments:</h4>
+          <form role="form">
+            <div class="form-group">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="radio" name="options" id="option1"> SIC
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" name="options" id="option2"> NAICS
+                </label>
+              </div>  
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail1">Search</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a SIC or NAICS...">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputPassword1">Code</label>
+              <textarea class="form-control" rows="10">SIC or NAICS selection tree</textarea>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <h4>Included in the report:</h4>
+          <h4><span class="label label-primary">1200-1399 x</span></h4>
+          <h4><span class="label label-primary">1500 x</span></h4> 
+          <h4><span class="label label-primary">2000-3999 x</span></h4> 
+          <h4><span class="label label-primary">4500-5000 x</span></h4> 
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Choose Company Sizes:</h4>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              1-9 Employees
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              10-19 Employees
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              20-49 Employees
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              50-99 Employees
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              100-499 Employees
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              500-999 Employees
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              1000+ Employees
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>Included in the report:</h4>
+          <p>All company sizes</p>
+        </div>
+
+      </div>
+      <hr>
+      <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+      <a href="#">Discard Changes</a>
+
+    </div>
+
+
+
+
+  </div>
+
+</div>
