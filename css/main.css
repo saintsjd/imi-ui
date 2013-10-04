@@ -15,6 +15,9 @@ a { color: #1087bf;}
   border: none;
   border-radius: 0;
 }
+
+.modal-dialog { width: 95% }
+
 .label-primary {
 background-color: #1087bf;
 }
