@@ -78,16 +78,16 @@ margin-bottom: 20px;
 }
 
 .filter-btn:hover {
-  background-color: #aaa;
+  background-color: #7f8f98;
 }
 
 .filter-btn.active {
-  background-color: #ccc;
+  background-color: #c0c8cc;
 }
-.filter-btn:hover h3, .filter-btn.active h3 {
+.filter-btn.active h3 {
   color: #62717a;
 }
-.filter-btn:hover p, .filter-btn.active p {
+.filter-btn.active p {
   color: #62717a;
 }
 
@@ -103,7 +103,7 @@ margin-bottom: 20px;
 
 .filter {
   display :none;
-  background-color: #ccc;
+  background-color: #c0c8cc;
   padding: 9px 19px 19px;
   color:  #62717a;
   border-left: 1px solid #e3e3e3;
@@ -113,6 +113,7 @@ margin-bottom: 20px;
 .filter a {
 color: #62717a;
 }
+
 
 #report-sections-nav {
   margin: 0 0 10px 0;
