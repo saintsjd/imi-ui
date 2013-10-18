@@ -93,21 +93,20 @@ margin-bottom: 20px;
 .filter-btn.active {
   background-color: #c0c8cc;
 }
-.filter-btn.active h3 {
+.filter-btn.active h4 {
   color: #62717a;
 }
 .filter-btn.active p {
   color: #62717a;
 }
 
-.filter-btn h3 {
+.filter-btn h4 {
   font-weight: bold;
   margin-top: 0;
   color: #eee;
 }
 .filter-btn p {
   color: #ddd;
-  font-size: 1.0em;
 }
 
 .filter {
