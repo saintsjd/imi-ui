@@ -34,6 +34,14 @@ border: none;
   color: #fff;
 }
 
+.navbar-default .navbar-nav>.dropdown>a .caret {
+border-top-color: #fff;
+border-bottom-color: #fff;
+}
+.navbar-default .navbar-nav>.dropdown>a:hover .caret {
+border-top-color: #c1e7fa;;
+border-bottom-color: #c1e7fa;;
+}
 
 #support-bar {
     background-color: #424242;
