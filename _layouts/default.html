@@ -51,9 +51,9 @@
         <li><a href="#">Settings</a></li>
         <li><a href="index.html">Log out</a></li>
       </ul>
-      <form class="navbar-form navbar-right" role="search">
-        <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-plus"></span> Create New Report</button>
-      </form>
+
+
+      <a data-toggle="modal" href="#newReportModal" class="btn btn-warning navbar-btn navbar-right"><span class="glyphicon glyphicon-plus"></span> Create New Report</a>
     </div><!-- /.navbar-collapse -->
   </div><!-- .container -->
 </nav>
@@ -68,6 +68,33 @@
     <p>Model Fingerprint: 19a8270fa8ccb9f17a207bd42552501d809e0611 2013-02</p>
   </div>
 </footer>
+
+
+<div class="modal fade" id="newReportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Create New Report</h4>
+        </div>
+        <div class="modal-body">
+
+<form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">New Report Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Example: Abrasives Profile for Northeast Region...">
+  </div>
+</form>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <a href="new.html" class="btn btn-primary">Create Report</a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 <script src="js/jquery-2.0.3.min.js"></script>
 
