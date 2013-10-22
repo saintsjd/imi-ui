@@ -105,18 +105,6 @@ border-top-right-radius: 6px;
 border-bottom-right-radius: 6px;
 }
 
-#filter-bar .first a.active {
--webkit-border-bottom-left-radius: 0;
--moz-border-radius-bottomleft: 0;
-border-bottom-left-radius: 0;
-}
-
-#filter-bar .last a.active {
--webkit-border-bottom-right-radius: 0;
--moz-border-radius-bottomright: 0;
-border-bottom-right-radius: 0;
-}
-
 .filter-btn:hover {
   text-decoration: none;
 }
