@@ -1,6 +1,88 @@
 $(function(){
     'use strict';
+
+    var Product = Backbone.Model.extend({});
+    var Territory = Backbone.Model.extend({});
+
+    var Products = Backbone.Collection.extend({
+      model: Product
+    });
+    var Territories = Backbone.Collection.extend({
+      model: Territory
+    });
+
+    var products = new Products([
+        { id:'1',name:'Abrasives', selected: false },
+        { id:'2',name:'Brushes', selected: false },
+        { id:'3',name:'Cutting Tools', selected: false },
+        { id:'4',name:'Safety', selected: false }
+    ]);
+
+    var ProductCheckBox = Backbone.View.extend({
+        tagName: 'div',
+        className: 'checkbox',
+
+        events: {
+        'change input': 'select',
+        },
+
+        initialize: function() {
+            this.render();
+            this.listenTo(this.model, "change selected", this.render );
+            $("#product-selector").append(this.$el);
+        },
+
+        render: function() {
+            var checked = '';
+            if( this.model.get('selected') ) {
+                checked = ' checked ';
+            }
+            this.$el.html(
+                '<label><input type="checkbox" value="' + this.model.get('id') + '"' + checked +'>' + this.model.get('name') + '</label>'
+                );
+        },
+
+        select: function() {
+            var checkBox = this.$el.find('input')[0];
+            this.model.set({selected:$(checkBox).is(':checked')});
+        }
+
+    });
+    products.forEach(function(m){
+        new ProductCheckBox({model:m});
+    });
+
+
+    var ProductsSelectedDescription = Backbone.View.extend({
+
+        initialize: function() {
+            this.listenTo(this.collection, "change", this.render );
+            this.render();
+        },
+
+        render: function() {
+            var active = this.collection.where({selected: true});
+            if( active.length == 0 ){
+                this.$el.html("None Selected");
+            }else{
+                var toPrint = [];
+                _.forEach(active, function(i){
+                    toPrint.push(i.get('name'));
+                });
+                this.$el.html(toPrint.join(', '));
+            }
+        },
+    });
+    var productsSelectedDescription = new ProductsSelectedDescription({
+        el: $("#products-selected-description"),
+        collection: products
+    });
+
+
+
+
     
+
     $('#support-link,#support-bar .close').click(function(){
         $('#support-bar').slideToggle();
     });
@@ -31,25 +113,25 @@ $(function(){
     });
 
 
-    $(".form-signin").submit(function(){
-        window.location = "myreports.html";
+    $('.form-signin').submit(function(){
+        window.location = 'myreports.html';
         return false;
     });
 
 
-    $("#showme-product").click(function(){
-        $("#product-filter-btn").fadeTo( "slow", 0.10,function(){
-            $("#product-filter-btn").fadeTo( "slow", 1.0 );
+    $('#showme-product').click(function(){
+        $('#product-filter-btn').fadeTo( 'slow', 0.10,function(){
+            $('#product-filter-btn').fadeTo( 'slow', 1.0 );
         });
     });
-    $("#showme-territory").click(function(){
-        $("#territory-filter-btn").fadeTo( "slow", 0.10,function(){
-            $("#territory-filter-btn").fadeTo( "slow", 1.0 );
+    $('#showme-territory').click(function(){
+        $('#territory-filter-btn').fadeTo( 'slow', 0.10,function(){
+            $('#territory-filter-btn').fadeTo( 'slow', 1.0 );
         });
     });
-    $("#showme-optional").click(function(){
-        $("#optional-filter-btn").fadeTo( "slow", 0.10,function(){
-            $("#optional-filter-btn").fadeTo( "slow", 1.0 );
+    $('#showme-optional').click(function(){
+        $('#optional-filter-btn').fadeTo( 'slow', 0.10,function(){
+            $('#optional-filter-btn').fadeTo( 'slow', 1.0 );
         });
     });
 
