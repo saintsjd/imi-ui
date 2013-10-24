@@ -22,7 +22,8 @@ title: Your New Jekyll Site
     <li><a href="#">All Data</a></li>
     <li><a href="#">Territory Data</a></li>
     <li><a href="#">Customer Segment Data</a></li>
-    <li><a href="#">Prospect Data</a></li>
+    <li><a href="#">Basic Prospect Records</a></li>
+    <li><a href="#">Full Prospect Records (Fee may apply)</a></li>
     <li class="divider"></li>
     <li><a href="#">Print</a></li>
     <li><a href="#">Share</a></li>
@@ -80,7 +81,8 @@ title: Your New Jekyll Site
     <li><a href="#">All Data</a></li>
     <li><a href="#">Territory Data</a></li>
     <li><a href="#">Customer Segment Data</a></li>
-    <li><a href="#">Prospect Data</a></li>
+    <li><a href="#">Basic Prospect Records</a></li>
+    <li><a href="#">Full Prospect Records (Fee may apply)</a></li>
     <li class="divider"></li>
     <li><a href="#">Print</a></li>
     <li><a href="#">Share</a></li>
@@ -200,7 +202,8 @@ title: Your New Jekyll Site
     <li><a href="#">All Data</a></li>
     <li><a href="#">Territory Data</a></li>
     <li><a href="#">Customer Segment Data</a></li>
-    <li><a href="#">Prospect Data</a></li>
+    <li><a href="#">Basic Prospect Records</a></li>
+    <li><a href="#">Full Prospect Records (Fee may apply)</a></li>
     <li class="divider"></li>
     <li><a href="#">Print</a></li>
     <li><a href="#">Share</a></li>
@@ -306,25 +309,30 @@ title: Your New Jekyll Site
 <div id="prospects" class="section">
 
 <div class="row">
-  <div class="col-sm-10">
-<h2>Prospects</h2>
+  <div class="col-sm-7">
+<h2>Prospects <small>(3,245 basic records)</small></h2>
   </div>
-  <div class="col-sm-2">
+  <div class="col-sm-5">
 
 <!-- Single button -->
 <div class="btn-group pull-right">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="margin-top:25px;">
+  <div class="btn-toolbar" style="margin-top:18px;">
+  <a data-toggle="modal" href="#myModalPurchase" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span> Purchase Full Contact Records</a>
+
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
     <span class="glyphicon glyphicon-download"></span> Download <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu">
     <li><a href="#">All Data</a></li>
     <li><a href="#">Territory Data</a></li>
     <li><a href="#">Customer Segment Data</a></li>
-    <li><a href="#">Prospect Data</a></li>
+    <li><a href="#">Basic Prospect Records</a></li>
+    <li><a href="#">Full Prospect Records (Fee may apply)</a></li>
     <li class="divider"></li>
     <li><a href="#">Print</a></li>
     <li><a href="#">Share</a></li>
   </ul>
+  </div>
 </div>
   </div>
 </div>
@@ -675,6 +683,38 @@ title: Your New Jekyll Site
             </div>
             <div class="col-sm-6">
           <button type="button" class="btn btn-lg btn-block btn-primary">Download</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModalPurchase" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Purchase Full Contact Records</h4>
+        </div>
+        <div class="modal-body">
+
+          <p>Full contact records include: CEO name, phone number, address, city, .....</p>
+
+          <h4>Total cost for this order: $324.50</h4>
+
+          </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-sm-6">
+          <button type="button" class="btn btn-lg btn-block btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+            <div class="col-sm-6">
+          <button type="button" class="btn btn-lg btn-block btn-primary">Submit for Purchase</button>
             </div>
           </div>
         </div>
