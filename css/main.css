@@ -279,3 +279,36 @@ border-color: #d58512;
   border-radius: 4px;
   border: 1px solid #ddd;
 }
+
+#global-notification {
+  font-weight: 300;
+  position: fixed;
+  z-index: 600;
+  text-align: center;
+  font-size: 24px;
+  bottom: -86px;
+  left: 0;
+  right: 0;
+  padding: 0 10px;
+  line-height: 86px;
+  height: 86px;
+  background: #556169;
+  background: rgba(85,97,105,.85);
+  color: #eee;
+  background: #d58512;
+  background: rgba(213,133,18,.85);
+  color: #fff;
+  -o-transition: bottom .3s ease-in-out 0s;
+  -moz-transition: bottom .3s ease-in-out 0s;
+  -webkit-transition: bottom .3s ease-in-out 0s;
+  transition: bottom .3s ease-in-out 0s;
+}
+#global-notification.is-visible {
+  bottom: 0;
+}
+.separate-layer {
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}

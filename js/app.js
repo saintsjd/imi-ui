@@ -171,5 +171,12 @@ $(function(){
         });
     });
 
+    function globalUpdate(){
+        setTimeout( "$('#global-notification').addClass('is-visible')",1000 );
+        setTimeout( "$('#global-notification').removeClass('is-visible')",5000 );
+    }
+
+    $('.update-btn').click(globalUpdate);
+
     return '\'Allo \'Allo!';
 });
