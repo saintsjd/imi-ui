@@ -95,6 +95,11 @@ margin-bottom: 20px;
 border-top-left-radius: 6px;
 border-bottom-left-radius: 6px;
 }
+#filter-bar .first a.active {
+-webkit-border-bottom-left-radius: 0px;
+-moz-border-radius-bottomleft: 0px;
+border-bottom-left-radius: 0px;
+}
 
 #filter-bar .last a {
 -webkit-border-top-right-radius: 6px;
